@@ -20,22 +20,22 @@ pin nRF24l01→pin Arduino
 const uint64_t pipe = 0xE8E8F0F0E1LL; 
 
 RF24 radio(CE_PIN, CSN_PIN); 
-char joystick;  
+char keypadIn;  
 void setup()
 {
   Serial.begin(9600);
   Serial.println("Nrf24L01 Receiver Starting");
   radio.begin();
   radio.openReadingPipe(1,pipe);
-  radio.startListening();;
+  radio.startListening();
 }
 
 void loop()
 {
   while ( !radio.available() ){};
-  radio.read( &joystick, sizeof(joystick) );
-  if(joystick!=0){
-  Serial.print(joystick);
+  radio.read( &keypadIn, sizeof(keypadIn) );
+  if(keypadIn != 0){
+    Serial.print(keypadIn);
   }
 }
 
