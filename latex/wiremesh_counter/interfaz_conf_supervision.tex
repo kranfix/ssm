@@ -1,0 +1,93 @@
+\documentclass[main_conf.tex]{subfiles}
+ 
+\begin{document}
+
+Para la interfaz sólo se usará un display LCD de 16x2 y un teclado
+matricial de 4x4  (ver Fig. 3.1). Estos pasarán por diversos modos de 
+operación:
+
+\subsection{Modo calibración manual inicial}
+Al inicio de todo el proceso es necesario una calibración manual para
+alinear la hebra y ubicarla al borde de la cortadora puesto que existe
+una distancia inicial entre los ruedas dentadas y la cortadora como se
+muestra en la fig. \ref{distancia_inicial} con la línea roja.
+Así mismo, el display LCD mostrará lo expresado en la fig. 
+\ref{Modo_Calibracion_manual_inicial} y esperará a que se presione enter,
+transitando así al modo "estimando".
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=3.0in]{../img/distancia_inicial.png}
+  \caption{Distancia entre las ruedas dentadas y la cortadora.}
+  \label{distancia_inicial}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=3.0in]{../img/Modo_Calibracion_manual_inicial.png}
+  \caption{Texto mostrado en el modo “Calibración manual inicial”.}
+  \label{Modo_Calibracion_manual_inicial}
+\end{figure}
+
+\subsection{Modo estimando}
+Este es el proceso principal en el se estima la longitud de la hebra
+confeccionada. Este debe ser activada sí y solo sí se ha terminado de
+calibrar manualmente la posición de la hebra al inicio de la cortadora.
+El formato información mostrada por el display LCD se muestra en la fig.
+\ref{Modo_estimando}.a. Las variables en el formato significan:
+
+\begin{itemize}
+\item \$N: Cantidad total de hebras a confeccionar.
+\item \$n: Cantidad de hebras confeccionadas hasta el momento.
+\item \$L: Longitud deseada por hebra.
+\item \$l: Longitud actual de la en proceso de confección.
+\end{itemize}
+
+En la fig. \ref{Modo_estimando}.b se aprecia un ejemplo con valores:
+\begin{itemize}
+\item $\$N = 125$
+\item $\$n = 100$
+\item $\$L = 15.03$
+\item $\$l = 8.95$
+\end{itemize}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=3.0in]{../img/Modo_estimando.png}
+  \caption{(a) Formato de texto mostrado en el modo “estimando”.
+           (b) Ejemplo del texto mostrado.
+  }
+  \label{Modo_estimando}
+\end{figure}
+
+\subsection{Modo cortadora}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=3.0in]{../img/Modo_cortadora.png}
+  \caption{Texto mostrado en modo “cortadora”.}
+  \label{Modo_cortadora}
+\end{figure}
+
+\subsection{Modo conf.L}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=3.0in]{../img/Modo_Conf_L.png}
+  \caption{(a) Texto mostrado a la espera de la longitud en el Modo “conf.L”.
+           (b) Ejemplo con valor ingresado.
+  }
+  \label{Modo_Conf_L}
+\end{figure}
+
+\subsection{Modo conf.L}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=3.0in]{../img/Modo_Conf_N.png}
+  \caption{(a) Texto mostrado a la espera de la longitud en el Modo “conf.N”.
+           (b) Ejemplo con valor ingresado.
+  }
+  \label{Modo_Conf_N}
+\end{figure}
+\end{document}
