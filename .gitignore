@@ -1,0 +1,5 @@
+# Latex - TexMaker outputs
+*.aux
+*.log
+*.pdf
+*.synctex.gz
