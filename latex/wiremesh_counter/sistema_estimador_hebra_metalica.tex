@@ -1,15 +1,15 @@
 \documentclass[main_conf.tex]{subfiles}
- 
+
 \begin{document}
 
-Para medir la longitud se optará por colocar la hebra entre 2 
-rodillos, uno de ellos estará conectado a un disco encoder (ver 
-Fig. \ref{rodillo_con_disco}), este mismo será relativo y no 
-absoluto para minimizar costos al no utilizar más sensores. Este 
-encoder produce un código único digital para cada ángulo distinto 
-de rotación del eje conectado al rodillo (codigo Grey), cada 
-diente(estado ON/OFF) será detectado por un sensor fotoeléctrico 
-para encoder H2010, de tal manera que se cree un código binario 
+Para medir la longitud se optará por colocar la hebra entre 2
+rodillos, uno de ellos estará conectado a un disco encoder (ver
+Fig. \ref{rodillo_con_disco}), este mismo será relativo y no
+absoluto para minimizar costos al no utilizar más sensores. Este
+encoder produce un código único digital para cada ángulo distinto
+de rotación del eje conectado al rodillo (codigo Grey), cada
+diente(estado ON/OFF) será detectado por un sensor fotoeléctrico
+para encoder H2010, de tal manera que se cree un código binario
 para cado uno de estos contactos.
 
 \begin{figure}[!t]
@@ -40,13 +40,13 @@ entre el número de dientes($N$).
 \alpha=\frac{2\pi}{N}
 \end{equation}
 
-Se elige un error($\e$) máximo para la longitud.
+Se elige un error($e$) máximo para la longitud.
 
 \begin{equation}
 e \leq 2 mm
 \end{equation}
 
-Este error es una variación del ángulo girado por el rodillo 
+Este error es una variación del ángulo girado por el rodillo
 multiplicado por el radio de este mismo.
 
 \begin{equation}
@@ -84,7 +84,7 @@ R*\Delta\theta\leq R*\frac{2}{15}
 L\leq R*\frac{2}{15}
 \end{equation}
 
-La longitud del disco encoder en (\ref{eq:max_alpha}) se reemplaza 
+La longitud del disco encoder en (\ref{eq:max_alpha}) se reemplaza
 por el radio del disco y el ángulo del diente
 
 \begin{equation}
@@ -139,7 +139,7 @@ cual es número de ranuras desplazadas(k en latex), que es igual a
 la longitud desplazada del rodillo entre la longitud de cada diente
 
 \begin{equation}
-k=\frac{R*\theta}{R*\alpha}=\frac{\theta}{\alpha}}
+k=\frac{R*\theta}{R*\alpha}=\frac{\theta}{\alpha}
 \end{equation}
 
 \begin{equation}
