@@ -37,24 +37,28 @@
 %
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{Diseño e Implementación de un Sistema de Medida de Longitud de Hebras Metálicas de Bajo Costo para la Reducción de Pérdidas en una Planta de Fabricación de Mallas Metálicas}
+\title{
+  Diseño e Implementación de un Sistema de Medida de Longitud de
+  Hebras Metálicas de Bajo Costo para la Reducción de Pérdidas
+  en una Planta de Fabricación de Mallas Metálicas
+}
 
 
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{Frank A. Moreno Vera}
-\IEEEauthorblockA{Departamento de automatización\\
-GeckoTronics S.A.C.\\
-Lima, Perú\\
-Email: frank.moreno@geckotronics.pe}
-\and
-
-\IEEEauthorblockN{Jhonatan D. Paucará Prado}
-\IEEEauthorblockA{Departamento de automatización\\
-GeckoTronics S.A.C.\\
-Lima, Perú\\
-Email: jhonatan.paucara@gmail.com}
+\author{
+  \IEEEauthorblockN{Frank A. Moreno Vera}
+  \IEEEauthorblockA{Departamento de automatización\\
+    GeckoTronics S.A.C.\\
+    Lima, Perú\\
+    Email: frank.moreno@geckotronics.pe}
+  \and
+  \IEEEauthorblockN{Jhonatan D. Paucará Prado}
+  \IEEEauthorblockA{Departamento de automatización\\
+    GeckoTronics S.A.C.\\
+    Lima, Perú\\
+    Email: jhonatan.paucara@gmail.com}
 }
 
 % use for special paper notices
@@ -69,12 +73,6 @@ Email: jhonatan.paucara@gmail.com}
 %\boldmath
 The abstract goes here.
 \end{abstract}
-% IEEEtran.cls defaults to using nonbold math in the Abstract.
-% This preserves the distinction between vectors and scalars. However,
-% if the conference you are submitting to favors bold math in the abstract,
-% then you can use LaTeX's standard command \boldmath at the very start
-% of the abstract to achieve this. Many IEEE journals/conferences frown on
-% math in the abstract anyway.
 
 % no keywords
 
@@ -89,39 +87,24 @@ The abstract goes here.
 \IEEEpeerreviewmaketitle
 
 \section{Introduction}
-Las plantas de fabricación de mallas metálicas usan máquinas de 
-confección de hebras metálicas de diferentes grosores y 
-longitudes. Estas máquinas no suelen poseer sistema 
-automatizado, solo están los controles On/Off manual, por lo 
-cual la medición de longitud de cada hebra es manual, lenta y con 
-grandes pérdidas. El proceso de automatización
-consiste en reducir al máximo el error de medición para así 
-reducir la merma y reducir costos de producción. Así mismo, este 
-sistema será fabricado con materiales de bajo costo y de fácil 
-obtención en el mercado local.
+\subfile{intro}
 
 \section{Sistema estimador de longitud de hebra metálica}
-
 \subfile{sistema_estimador_hebra_metalica}
 
 \section{Caja eléctrica a modificar}
-
 \subfile{caja_electrica}
 
 \section{Interfaz de configuración y supervisión}
-
 \subfile{interfaz_conf_supervision}
 
 \section{Conclusiones}
-
 The conclusion goes here.
 
 % conference papers do not normally have an appendix
-
 % use section* for acknowledgement
 
 \section{Desarrollo y alcances futuros}
-
 \subfile{desarrollo_y_alcance_futuro}
 
 \end{document}
