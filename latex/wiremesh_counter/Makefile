@@ -1,14 +1,10 @@
-clean: cleanlog cleanb
+clean: cleancomp cleanb
 	rm *.log
 	rm *.synctex.gz
 	rm *.aux
 
-cleanpdf:
-	rm *.pdf
-
-cleanlog:
-	rm *.log
-
+cleancomp: *.log *.synctex.gz *.aux
+cleanpdf: *.pdf
 cleanb: *.bbl *.blg
 	rm $^
 
