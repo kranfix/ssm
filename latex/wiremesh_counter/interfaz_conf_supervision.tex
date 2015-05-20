@@ -1,9 +1,33 @@
 \documentclass[main_conf.tex]{subfiles}
 \begin{document}
 
-Para la interfaz sólo se usará un display LCD de 16x2 y un teclado
-matricial de 4x4  (ver Fig. 3.1). Estos pasarán por diversos modos de
-operación:
+Se diseña una caja de control (Control Box, CB) la cual cuenta
+con display LCD de 16x2 y un teclado matricial de 4x4 mostradas
+en la Fig. \ref{box_iso}.a habilitando una HMI. En la parte trasera
+cuenta con un orificio para poder introducirle cables de poder y
+lo cables conectados a un encoder para la estimación de la longitud
+de la HM como se muestra en la Fig. \ref{box_iso}.b.
+
+\begin{figure}[t]
+  \centering
+  \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1.5in]{../img/box/iso_front.png}
+    \label{box_iso_front}
+    \caption{Vista frontal}
+  \end{subfigure}
+  
+  \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1.5in]{../img/box/iso_back.png}
+    \label{box_iso_back}
+    \caption{Vista trasera}
+  \end{subfigure}
+
+  \caption{Vistas isométricas de la caja de control}
+  \label{box_iso}
+\end{figure}
+
 
 \subsection{Modo calibración manual inicial}
 Al inicio de todo el proceso es necesario una calibración manual para
