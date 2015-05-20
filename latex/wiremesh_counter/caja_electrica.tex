@@ -2,8 +2,8 @@
 
 \begin{document}
 
-Inicialmente la caja eléctrica tiene 4 botones, un par de encendido y
-apagado general y el otro otro par para el control de la máquina en
+La caja eléctrica tiene 4 botones, un par de encendido y
+apagado general y el otro par para el control de la máquina en
 específico (Ver Fig. \ref{caja_electrica_tapa}).
 
 \begin{figure}[!t]
@@ -23,14 +23,12 @@ LRD21.
   \begin{subfigure}[b]{0.5\textwidth}
     \centering
     \includegraphics[width=1.5in]{../img/caja_electrica/llave_a.png}
-    \label{caja_electrica_llave_a}
     \caption{Llave termomagnetica principal}
   \end{subfigure}
-  
+
   \begin{subfigure}[b]{0.5\textwidth}
     \centering
     \includegraphics[width=1.5in]{../img/caja_electrica/llave_b.png}
-    \label{caja_electrica_llave_b}
     \caption{Arreglo Contactor-Relé Térmico.}
   \end{subfigure}
 
@@ -41,14 +39,15 @@ LRD21.
 La primera imagen muestra la llave termomagnética que se encarga del
 control de energía a nivel general para todo el sistema, mientras que la
 segunda nos enseña el arreglo que controla y protege al motor en caso de
-una elevada corriente o temperatura.
+una elevada corriente o temperatura[3] \cite{Motor_control:schneider}.
 
 El sistema de control de encendido de un motor monofásico utilizando
-contactores es ampliamente conocido, como se muestra en la Fig.
-\ref{diag_control_on_off_motor} por lo que parte de nuestro trabajo
-consistirá en agregar un switch de apagado y encendido adicional que podrá
-ser activado tanto de forma manual así como de forma automática y que en
-la figura se encuentra sombreada como “Controla Distancia”.
+contactores es ampliamente conocido[manual_electrotecnica:schneider],
+como se muestra en la Fig. \ref{diag_control_on_off_motor} por lo que
+parte de nuestro trabajo consistirá en utilizar un sistema de control en
+base a un Arduino para agregar un switch de apagado y encendido adicional
+que podrá ser activado tanto de forma manual así como de forma automática y
+que en la figura se encuentra enmarcada como “Control a Distancia”.
 
 \begin{figure}[t]
   \centering
