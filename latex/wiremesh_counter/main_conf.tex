@@ -1,7 +1,6 @@
 \documentclass[conference]{IEEEtran}
 
 \usepackage[utf8]{inputenc}
-%\usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{subfiles}
@@ -70,7 +69,20 @@
 
 \begin{abstract}
 %\boldmath
-The abstract goes here.
+Las máquinas fabricadoras de hebras metálicas(HM), muy
+usadas para la fabricación de mallas metálicas, por lo
+general, no cuentan con un sistema de control dado que se
+usan para fabricar muchos tipos de HM dependiendo de la
+piezas mecánicas que el operador haya elegido a previo uso.
+Aunque algunas máquinas vienen con un sistema de control,
+este eleva demasiado el precio de la máquina por lo que no
+son muy común su venta. Este paper propone un sistema que
+le permita al operador configurar parámetros de cantidad y
+longitud de cada HM para automatizar parte del proceso
+de fabricación de mallas metálicas. Se describe el procediento
+de trabajo a automatizas. Se describen las diversas partes
+de la máquina. Se explica el sistema de control y su interacción
+con los circuitos de control manual y de potencia.
 \end{abstract}
 
 % no keywords
@@ -89,6 +101,7 @@ The abstract goes here.
 \subfile{intro}
 
 \section{Sistema estimador de longitud de hebra metálica}
+\label{sec:estimador}
 \subfile{sistema_estimador_hebra_metalica}
 
 \section{Caja eléctrica a modificar}

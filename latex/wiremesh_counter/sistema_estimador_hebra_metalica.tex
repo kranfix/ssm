@@ -20,7 +20,7 @@ para cado uno de estos contactos.
 \end{figure}
 
 \subsection{Cálculo del número de dientes y hendiduras}
-
+\label{sec:estimador:dientes}
 El sistema mide el número de ranuras desplazadas lo cual determinará
 la longitud de la hebra fabricada. La longitud ($l$) está dada por
 el ángulo que gira el rodillo ($\theta$) multiplicado por el radio
@@ -118,14 +118,14 @@ Se deduce de (\ref{eq:delta_theta_r_leq_2mm}) el error de la
 longitud dada en la siguiente fórmula
 
 \begin{equation}
-e=\alpha*r
+e = \alpha * r
 \end{equation}
 
 Reemplazando (alpha en latex) en (\ref{eq:alpha_equ_2pi_N}) se
 obtiene
 
 \begin{equation}
-e=\frac{2\pi}{N}*r
+e = \frac{2\pi}{N} * r
 \end{equation}
 
 Reemplazando con el nuevo valor de $N$
@@ -139,7 +139,8 @@ cual es número de ranuras desplazadas(k en latex), que es igual a
 la longitud desplazada del rodillo entre la longitud de cada diente
 
 \begin{equation}
-k=\frac{R*\theta}{R*\alpha}=\frac{\theta}{\alpha}
+k = \frac{R * \theta}{R * \alpha}
+  = \frac{\theta}{\alpha}
 \end{equation}
 
 \begin{equation}
@@ -150,6 +151,22 @@ k = \frac{\theta}{2\pi}*N
 Se dimensionarán 4 medidas que se muestran en la Fig.
 \ref{rodillo_con_disco}
 
-Empezando por $H$, podemos ver que
+Empezando por $H$, podemos ver que las es la altura del tronco
+del rodillo con disco y debe ser más grande que la altura de la
+HM más grande a fabricar por lo que se decide asignar
+
+$$ H = 90 mm $$
+
+La siguiente variable es $h$, la altura del eje que une el
+rodillo con el disco encoder. Se elige un valor que proteja
+al disco ante cualquier desvío de la HM.
+
+$$ h = 10 mm $$
+
+Dado los cálculos hechos en \ref{sec:estimador:dientes} se
+determina los siguientes valores:
+
+$$ R = 50 mm $$
+$$ r = 15 mm $$
 
 \end{document}
