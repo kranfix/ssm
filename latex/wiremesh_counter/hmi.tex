@@ -3,7 +3,7 @@
 
 Se diseña una caja de control (Control Box, CB) la cual cuenta
 con display LCD de 16x2 y un teclado matricial de 4x4 mostradas
-en la Fig. \ref{box_iso}.a habilitando una HMI. En la parte trasera
+en la Fig. \ref{box:iso}.a habilitando una HMI. En la parte trasera
 cuenta con un orificio para poder introducirle cables de poder y
 lo cables conectados a un encoder para la estimación de la longitud
 de la HM como se muestra en la Fig. \ref{box_iso}.b.
@@ -13,19 +13,17 @@ de la HM como se muestra en la Fig. \ref{box_iso}.b.
   \begin{subfigure}[b]{0.5\textwidth}
     \centering
     \includegraphics[width=1.5in]{../img/box/iso_front.png}
-    \label{box_iso_front}
     \caption{Vista frontal}
   \end{subfigure}
-  
+
   \begin{subfigure}[b]{0.5\textwidth}
     \centering
     \includegraphics[width=1.5in]{../img/box/iso_back.png}
-    \label{box_iso_back}
     \caption{Vista trasera}
   \end{subfigure}
 
-  \caption{Vistas isométricas de la caja de control}
-  \label{box_iso}
+  \caption{isométricas de la caja de control}
+  \label{box:iso}
 \end{figure}
 
 
@@ -74,12 +72,21 @@ En la fig. \ref{Modo_estimando}.b se aprecia un ejemplo con valores:
 \item $\$l = 8.95$
 \end{itemize}
 
-\begin{figure}[!h]
+\begin{figure}[t]
   \centering
-  \includegraphics[width=3.0in]{../img/modo/estimando.png}
-  \caption{(a) Formato de texto mostrado en el modo “estimando”.
-           (b) Ejemplo del texto mostrado.
-  }
+  \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1.5in]{../img/modo/estimando_view.png}
+    \caption{Formato de texto mostrado}
+  \end{subfigure}
+
+  \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1.5in]{../img/modo/estimando_sample.png}
+    \caption{Ejemplo de texto mostrado}
+  \end{subfigure}
+
+  \caption{Formato y ejemplo del modo "estimando"}
   \label{Modo_estimando}
 \end{figure}
 
@@ -103,10 +110,19 @@ ejemplo con $L = 15.03$.
 
 \begin{figure}[!t]
   \centering
-  \includegraphics[width=3.0in]{../img/modo/Conf_L.png}
-  \caption{(a) Texto mostrado a la espera de la longitud en el Modo “conf.L”.
-           (b) Ejemplo con valor ingresado.
-  }
+  \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1.5in]{../img/modo/conf_L_view.png}
+    \caption{Formato de texto mostrado}
+  \end{subfigure}
+
+  \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1.5in]{../img/modo/conf_L_sample.png}
+    \caption{Ejemplo de texto mostrado}
+  \end{subfigure}
+
+  \caption{Formato y ejemplo del modo "conf.L"}
   \label{Modo_Conf_L}
 \end{figure}
 
@@ -118,10 +134,20 @@ ejemplo con $N = 1025$.
 
 \begin{figure}[!t]
   \centering
-  \includegraphics[width=3.0in]{../img/modo/Conf_N.png}
-  \caption{(a) Texto mostrado a la espera de la longitud en el Modo “conf.N”.
-           (b) Ejemplo con valor ingresado.
-  }
+  \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1.5in]{../img/modo/conf_N_view.png}
+    \caption{Formato de texto mostrado}
+  \end{subfigure}
+
+  \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1.5in]{../img/modo/conf_N_sample.png}
+    \caption{Ejemplo de texto mostrado}
+  \end{subfigure}
+
+  \caption{Formato y ejemplo del modo "conf.L"}
   \label{Modo_Conf_N}
 \end{figure}
+
 \end{document}
