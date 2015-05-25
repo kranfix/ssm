@@ -3,3 +3,7 @@
 *.log
 *.pdf
 *.synctex.gz
+
+# Miniatura de imagenes
+Thumbs.db
+thumbs.db
