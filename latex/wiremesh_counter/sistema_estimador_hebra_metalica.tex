@@ -55,13 +55,16 @@ multiplicado por el radio de este mismo.
 \end{equation}
 
 Por cuestiones de diseño se elige un diámetro de 3cm, para reducir
-costo en acero, por lo que el radio es igual a $r=15mm$.
-
-Reemplazando se halla el valor de la variación del ángulo
+costo en acero, por lo que el radio es igual a:
 
 \begin{equation}
-\Delta \theta * 15mm \leq 2mm
+\label{eq:r_equ_15mm}
+r=15mm
 \end{equation}
+
+Reemplazando (\ref{eq:r_equ_15mm}) en
+(\ref{eq:delta_theta_r_leq_2mm}) se halla el
+valor de la variación del ángulo
 
 \begin{equation}
 \Delta  \theta\leq\frac{2}{15}
@@ -118,10 +121,11 @@ Se deduce de (\ref{eq:delta_theta_r_leq_2mm}) el error de la
 longitud dada en la siguiente fórmula
 
 \begin{equation}
+\label{eq:e_equ_alpha_r}
 e = \alpha * r
 \end{equation}
 
-Reemplazando (alpha en latex) en (\ref{eq:alpha_equ_2pi_N}) se
+Reemplazando (\ref{eq:alpha_equ_2pi_N}) en (\ref{eq:e_equ_alpha_r}) se
 obtiene
 
 \begin{equation}
@@ -135,7 +139,7 @@ e = 1.3mm
 \end{equation}
 
 Para implementar el sistema con el sensor H2010 es necesario saber
-cual es número de ranuras desplazadas(k en latex), que es igual a
+cual es número de ranuras desplazadas($k$), que es igual a
 la longitud desplazada del rodillo entre la longitud de cada diente
 
 \begin{equation}
@@ -149,7 +153,14 @@ k = \frac{\theta}{2\pi}*N
 
 \subsection{Dimensionamiento del rodillo con disco}
 Se dimensionarán 4 medidas que se muestran en la Fig.
-\ref{rodillo_con_disco}
+\ref{rodillo_con_disco}. Estas son:
+
+\begin{itemize}
+\item $H$: altura del tronco del rodillo
+\item $h$: altura del eje entre el rodillo y el disco
+\item $R$: radio del disco
+\item $r$: radio del rodillo
+\end{itemize}
 
 Empezando por $H$, podemos ver que las es la altura del tronco
 del rodillo con disco y debe ser más grande que la altura de la
