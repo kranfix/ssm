@@ -7,29 +7,59 @@ longitudes. Estas máquinas no suelen poseer una Interfaz
 Humano-Máquina (Human-Machine Interface, HMI) para controlar
 automáticamente sus procesos o modos de trabajo. Solo se 
 cuenta con controles On/Off manual (ver Fig.
-\ref{maquina_a_automatizar}). Por ende, se tiene un medición de
-longitud de cada hebra manual, lenta y con grandes pérdidas.
+\ref{maquina_a_automatizar}.a). Por ende, se tiene una medición
+de longitud de cada hebra manual, lenta y con grandes pérdidas.
 
 Se implementa un sistema con el fin de reducir al máximo el
 error de medición para así reducir la merma y reducir costos de
 producción. Así mismo, este sistema será fabricado con materiales
 de bajo costo y de fácil obtención en el mercado local.
 
-\begin{figure}[h]
+\begin{figure}[t]
   \centering
-  %\includegraphics[width=2.5in]{../img/maquina_a_automatizar.jpg}
-  \includegraphics[width=2.5in]{../img/distancia_inicial.png}
+  \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=2.5in]{../img/maquina/toda.jpg}
+    \caption{Circuito de Potencia}
+  \end{subfigure}
+
+  \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=2.5in]{../img/maquina/tambor.jpg}
+    \caption{Tambor proveedor de HM}
+  \end{subfigure}
+
   \caption{Rodillo con disco para encoder relativo}
   \label{maquina_a_automatizar}
 \end{figure}
 
+
+\begin{figure}[t]
+  \centering
+  \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=2.5in]{../img/maquina/deformadores.jpg}
+    \caption{Discos deformadores}
+  \end{subfigure}
+
+  \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=2.5in]{../img/maquina/hebra.jpg}
+    \caption{Hebra metálica tras deformación}
+  \end{subfigure}
+
+  \caption{Rueda dentada deformadora y hebra metálica}
+  \label{maquina_a_automatizar}
+\end{figure}
+
+
 \subsection{Descripción de la máquina}
 La MCHM es alimentada de un alambre de acero por un tambor
-giratorio (TG) (ver Fig.\ref{maquina_a_automatizar}) y su función es
+giratorio (TG) (ver Fig.\ref{maquina_a_automatizar}.b) y su función es
 deformar este hilo para generar una hebra metálica (HM) mediante un
 par de rueda dentadas del mismo tamaño y mismo número de dientes.
 Existen 30 tamaños de estas ruedas (ver Fig.
-\ref{maquina_a_automatizar}) que son empotradas en un par
+\ref{maquina_a_automatizar}.c) que son empotradas en un par
 de ejes que giran a la misma velocidad.
 
 \subsection{Proceso manual a automatizar}
