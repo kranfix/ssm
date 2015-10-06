@@ -12,6 +12,7 @@ diente(estado ON/OFF) será detectado por un sensor fotoeléctrico
 para encoder H2010, de tal manera que se cree un código binario
 para cado uno de estos contactos.
 
+
 \begin{figure}[!t]
   \centering
   \includegraphics[width=2.5in]{../img/rodillo/con_disco.jpg}
@@ -32,8 +33,9 @@ de este mismo ($r$) como se muestra en la ecuación
 l = \theta * r
 \end{equation}
 
-El ángulo de cada diente($\alpha$) es igual a una vuelta completa
-entre el número de dientes($N$).
+El ángulo de cada diente es igual al ángulo de cada hendidura ($\alpha$),
+y este es igual a una vuelta completa
+entre la suma del número de dientes y el número de hendiduras ($N$).
 
 \begin{equation}
 \label{eq:alpha_equ_2pi_N}
@@ -72,11 +74,7 @@ valor de la variación del ángulo
 
 Ésta variación del ángulo es multiplicada por el radio del disco
 ($R$) que da la longitud de un diente, por conveniencia se
-elige un radio de disco igual a
-
-\begin{equation}
-R=5cm
-\end{equation}
+elige un radio de disco igual a 5cm
 
 \begin{equation}
 R*\Delta\theta\leq R*\frac{2}{15}
@@ -87,7 +85,7 @@ R*\Delta\theta\leq R*\frac{2}{15}
 L\leq R*\frac{2}{15}
 \end{equation}
 
-La longitud del disco encoder en (\ref{eq:max_alpha}) se reemplaza
+La longitud del disco encoder en (\ref{eq:max_L}) se reemplaza
 por el radio del disco y el ángulo del diente
 
 \begin{equation}
@@ -162,7 +160,7 @@ Se dimensionarán 4 medidas que se muestran en la Fig.
 \item $r$: radio del rodillo
 \end{itemize}
 
-Empezando por $H$, podemos ver que las es la altura del tronco
+Empezando por $H$, podemos ver que es la altura del tronco
 del rodillo con disco y debe ser más grande que la altura de la
 HM más grande a fabricar por lo que se decide asignar
 
